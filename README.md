@@ -30,15 +30,15 @@
 ###[3] Setting Up Mycroft Ai Gnome Shell Extension
 
   1. Provide Executable Permisions To Following Scripts:
-      '/home/$user/.local/share/gnome-shell/extensions/MycroftServiceStart.sh'
-      '/home/$user/.local/share/gnome-shell/extensions/MycroftServiceStartGui.sh'
-      '/home/$user/.local/share/gnome-shell/extensions/MycroftServiceStop.sh'
+      *'/home/$user/.local/share/gnome-shell/extensions/MycroftServiceStart.sh'
+      *'/home/$user/.local/share/gnome-shell/extensions/MycroftServiceStartGui.sh'
+      *'/home/$user/.local/share/gnome-shell/extensions/MycroftServiceStop.sh'
   2. Enable Mycroft-AI Gnome Shell Extension:
-      From Terminal = 'gnome-shell-extension-tool -e mycroftaignome@aix.com
-      From Gnome Tweak Tool -> Extension Tab
+      *From Terminal = 'gnome-shell-extension-tool -e mycroftaignome@aix.com
+      *From Gnome Tweak Tool -> Extension Tab
   3. Start Mycroft Service:
-      Please Note: Mycroft Service takes 30 to 60 seconds to Start. (Even after Status shows: Running). So wait a moment!!
-      Please Note: If Mycroft AI Service Continues to Show Status Unknown after Clicking Start. Debug and Report error.
+      *Please Note: Mycroft Service takes 30 to 60 seconds to Start. (Even after Status shows: Running). So wait a moment!!
+      *Please Note: If Mycroft AI Service Continues to Show Status Unknown after Clicking Start. Debug and Report error.
   4. Stopping Mycroft Service: Will kill all python background running applications (Use Stop Button Carefully!!)
 
 ###[4] Known Issues
@@ -60,3 +60,5 @@
 ###[6] Version 0.2 To Do List
   1. Fix Known Issues
   2. Implement Webkit to Call Graphical Results
+
+# Request Your Help & Contributors To Improve Extension 
