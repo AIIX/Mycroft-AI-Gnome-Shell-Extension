@@ -12,7 +12,7 @@
 5. Known Issues
 6. Version 0.2 To Do List
 
-### [(1)] Installing The Extension:
+### [1] Installing The Extension:
 
   i> Download Mycroft-AI Gnome Shell Extension Master Zip
   
@@ -24,13 +24,12 @@
   
   v> Copy Folder 'GUI' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core-master/mycroft/client' folder
 
-### ([2]) Installing The Extension Requirements
+### [2] Installing The Extension Requirements
   
-  i> Open Terminal and Run: 'sudo apt install python-dbus gettext python-goobject'
-  
-  ii> Open Terminal and Run: 'pip install pydbus'
+   1. Open Terminal and Run: 'sudo apt install python-dbus gettext python-goobject'
+   2. Open Terminal and Run: 'pip install pydbus'
 
-###([3]) Setting Up Mycroft Ai Gnome Shell Extension
-###([4]) Testing For Bugs & Reporting Format
-###([5]) Known Issues
-###([6]) Version 0.2 To Do List
+###[3] Setting Up Mycroft Ai Gnome Shell Extension
+###[4] Testing For Bugs & Reporting Format
+###[5] Known Issues
+###[6] Version 0.2 To Do List
