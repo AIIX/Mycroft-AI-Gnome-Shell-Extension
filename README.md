@@ -14,15 +14,11 @@
 
 ### [1] Installing The Extension:
 
-  i> Download Mycroft-AI Gnome Shell Extension Master Zip
-  
-  ii> Unpack Mycroft-AI Gnome Shell Extension Master Zip
-  
-  iii> Copy Folder 'mycroftaignome@aix.com' from Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/.local/share/gnome-shell/extensions' Folder
-  
-  iv> Copy File 'Start.sh' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core-master' folder. (Do Backup the orignal 'Start.sh' File)
-  
-  v> Copy Folder 'GUI' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core-master/mycroft/client' folder
+  1. Download Mycroft-AI Gnome Shell Extension Master Zip
+  2. Unpack Mycroft-AI Gnome Shell Extension Master Zip
+  3. Copy Folder 'mycroftaignome@aix.com' from Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/.local/share/gnome-shell/extensions' Folder
+  4. Copy File 'Start.sh' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core-master' folder. (Do Backup the orignal 'Start.sh' File)
+  5. Copy Folder 'GUI' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core-master/mycroft/client' folder
 
 ### [2] Installing The Extension Requirements
   
