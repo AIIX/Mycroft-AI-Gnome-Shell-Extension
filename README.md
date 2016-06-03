@@ -21,6 +21,13 @@
   3. Copy Folder 'mycroftaignome@aix.com' from Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/.local/share/gnome-shell/extensions' Folder
   4. Copy File 'Start.sh' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core-master' folder. (Do Backup the orignal 'Start.sh' File)
   5. Copy Folder 'GUI' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core-master/mycroft/client' folder
+  6. Copy from '/usr/lib/python' Dist Packages to '/home/$user/.virtualenvs/mycroft/lib/python2.7/site-packages':
+      *dbus folder
+      *dbus bindings file
+      *dbus glib binding file
+      *gi folder
+      *glib folder
+      *gobject folder
 
 ### [2] Installing The Extension Requirements
   
