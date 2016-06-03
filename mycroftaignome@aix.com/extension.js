@@ -57,6 +57,9 @@ const MycroftAiGnomeResultIface = '<node> \
 <method name="sendQuery"> \
     <arg type="s" direction="out" /> \
 </method> \
+<method name="getvoiceQuery"> \
+    <arg type="s" direction="in" /> \
+</method> \
 <signal name="signalQueryReady"> \
     <arg type="s" direction="out"/> \
 </signal> \
@@ -290,6 +293,10 @@ MycroftAiGnomeBox.prototype = {
 
 	setText: function(str) {
 	this._getnotificationoutput.set_text('Query Output:' + ' ' + str );
+    	},
+
+	getvoiceQuery: function(str) {
+	this._getnotificationinput.set_text(' ' + str );
     	},
 
 	sendQuery: function(str) {
