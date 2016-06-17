@@ -2,6 +2,7 @@ import threading
 import time
 from Queue import Queue
 
+import webbrowser
 import os
 import dbus
 import pyee
@@ -259,6 +260,12 @@ class AudioConsumer(threading.Thread):
                 logger.error("AccessDenied from Cerberus proxy.")
                 self.__speak("Your device is not registered yet. To start pairing, login at cerberus.mycroft.ai")
                 utterances.append("pair my device")
+		bus = dbus.SessionBus()
+		remote_object = bus.get_object("org.gnome.Shell","/com/mycroftaignome/MycroftGnomeResult")  
+		getvoiceQuery = remote_object.getvoiceQuery("Your device is not registered yet. To start pairing, login at cerberus.mycroft.ai", dbus_interface = "com.mycroftaignome.MycroftAiGnomeBox")
+		url = 'http://cerberus.mycroft.ai'
+		webbrowser.open(url)
+
             else:
                 logger.debug("STT: " + text)
                 if text.strip() != '':
