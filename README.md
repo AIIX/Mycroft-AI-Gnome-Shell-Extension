@@ -7,12 +7,18 @@
 
 #####Please Note: This Extension is dependent on Mycroft Ai Core. mycroft-core-master is required to be present in your '/home/$user' Directory for this extension to work.
 
+0. Changelog
 1. Installing The Extension
 2. Installing The Extension Requirements
 3. Setting Up Mycroft Ai Gnome Shell Extension
 4. Testing For Bugs & Reporting Format
 5. Known Issues
 6. Version 0.2 To Do List
+
+### [0] Changelog:
+  1. Added Voice Query Support
+  2. Changed GUI: Request & Reply in Single Box
+  3. Start & Stop Service within Single Frame. 
 
 ### [1] Installing The Extension:
 
@@ -28,6 +34,7 @@
       *gi folder
       *glib folder
       *gobject folder
+  7. Copy & Replace Listener.py from main download folder to '/home/$user/mycroft-core-master/mycroft/client/speech' 
 
 ### [2] Installing The Extension Requirements
   
@@ -50,8 +57,7 @@
 
 ###[4] Known Issues
   1. Text/Query when typed does not register: This error is due to DBUS flooding and Hacky Python GUI Code. (Working on Fix).
-  2. Spoken Text/Query is not registered in input and only Result of spoken text is shown. (Work in Progress).
-  3. Query such as Weather or *Skill with multiline output does not give complete output only the last line said by Mycroft is shown. (Requires Help of Skill Dev).
+  2. Query such as Weather or *Skill with multiline output does not give complete output only the last line said by Mycroft is shown. (Requires Help of Skill Dev).
   
 ###[5] Testing For Bugs & Reporting
   1. Use Tools To Debug:
