@@ -41,24 +41,17 @@ def connect():
     client.run_forever()
             
 
-def dbusout():
+def dbusout(): #sends the reply received from mycroft to the extension via dbus 
 	bus = dbus.SessionBus()
 	remote_object = bus.get_object("org.gnome.Shell","/com/mycroftaignome/MycroftGnomeResult")  
 	setText = remote_object.setText(guioutputstring,dbus_interface = "com.mycroftaignome.MycroftAiGnomeBox")
 	print ('lol'+remote_object.ListNames()[0])
 	
-#def dbusin():
-#	bus = dbus.SessionBus()
-#	remote_object = bus.get_object("org.gnome.Shell","/com/mycroftaignome/MycroftGnomeResult")  
-#	getText = remote_object.sendQuery(guioutputstring,dbus_interface = "com.mycroftaignome.MycroftAiGnomeBox")	
-#	print ('lol :'+getText)
-
-
 def getInput (queryInput):
 	print "getInput Query Input : " + queryInput
 	
 
-def catchInput(queryInput):
+def catchInput(queryInput): #gets the text entered by the user of the extension to client.emit 
 	bus = dbus.SessionBus()
 	remote_object = bus.get_object("org.gnome.Shell","/com/mycroftaignome/MycroftGnomeResult")  
 	getText = remote_object.sendQuery(guioutputstring,dbus_interface = "com.mycroftaignome.MycroftAiGnomeBox")	
@@ -71,7 +64,6 @@ def catchInput(queryInput):
 	event_thread.start()
 	try:
 		while True:
-		
        			print("Input:")
       	 		queryInput= object.sendQuery(guioutputstring,dbus_interface = "com.mycroftaignome.MycroftAiGnomeBox")
       			client.emit(
@@ -83,7 +75,7 @@ def catchInput(queryInput):
         	event_thread.exit()
 		sys.exit()		
 
-if __name__ == "__main__":	
+if __name__ == "__main__":	#dbus mainloop #signal recieved when user sends text to mycroft from the extension
         	dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
 		bus = dbus.SessionBus()
 		try:
