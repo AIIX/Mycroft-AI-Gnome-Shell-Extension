@@ -24,6 +24,8 @@
   1. Download Mycroft-AI Gnome Shell Extension Master Zip
   2. Unpack Mycroft-AI Gnome Shell Extension Master Zip
   3. Run installextension.sh
+  4. Restart Session
+  5. Enable from Gnome Tweak Tool
   
 (Manual Installation):
 
