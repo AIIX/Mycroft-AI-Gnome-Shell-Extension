@@ -27,8 +27,12 @@
   
 (Manual Installation):
 
-  1. Open Terminal and Run: 'sudo apt install python-dbus gettext python-gobject python-gtk2'
+  1. Open Terminal and Run: 
+  
+          'sudo apt install python-dbus gettext python-gobject python-gtk2'
+
   2. Copy Folder 'mycroftaignome@aix.com' from Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/.local/share/gnome-shell/extensions' Folder
+  
   3. Manually Please copy the following files from '/usr/lib/python2.7/dist-packages/' to '/home/
 $user/.virtualenvs/mycroft/lib/python2.7/site-packages'
 
@@ -39,9 +43,13 @@ $user/.virtualenvs/mycroft/lib/python2.7/site-packages'
          5. Gi Folder
 
   4. Make 'gui' folder in your '/home/$USER/mycroft-core/mycroft/client/{here}'
-  5. Copy 'guignome.py' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core-master/mycroft/client/gui' folder
+  
+  5. Copy 'guignome.py' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core/mycroft/client/gui' folder
+  
   6. Copy File 'Start.sh' From Mycroft-AI Gnome Shell Extension Master Zip to your '/home/$user/mycroft-core' folder. (Do Backup the orignal 'Start.sh' File)
+  
   7. Copy & Replace Listener.py from main download folder to '/home/$user/mycroft-core/mycroft/client/speech' 
+  
   8. Provide Executable Permisions To Following Scripts:
   
         *'/home/$user/.local/share/gnome-shell/extensions/MycroftServiceStart.sh'
