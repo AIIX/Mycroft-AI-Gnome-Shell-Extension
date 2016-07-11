@@ -61,16 +61,16 @@ $user/.virtualenvs/mycroft/lib/python2.7/site-packages'
         *From Terminal = 'gnome-shell-extension-tool -e mycroftaignome@aix.com
         *From Gnome Tweak Tool -> Extension Tab
   
-10. Start Mycroft Service:
-      *Please Note: Mycroft Service takes 30 to 60 seconds to Start.
-      *Please Note: If Mycroft AI Service Continues to Show Status Unknown after Clicking Start. Debug and Report error.
+  Start Mycroft Service:
+        *Please Note: Mycroft Service takes 30 to 60 seconds to Start.
+        *Please Note: If Mycroft AI Service Continues to Show Status Unknown after Clicking Start. Debug and Report error.
 
 ###[3] Testing For Bugs & Reporting
   1. Use Tools To Debug:
-      * Looking Glass (Gnome Default)
-      * journalctl /usr/bin/gnome-shell -f -o cat for Gnome Shell Debugging
-      * Dbus-monitor
-      * Bustle (Dbus-monitor in Gui)
-      * D-feet
+        * Looking Glass (Gnome Default)
+        * journalctl /usr/bin/gnome-shell -f -o cat for Gnome Shell Debugging
+        * Dbus-monitor
+        * Bustle (Dbus-monitor in Gui)
+        * D-feet
   
   2. Please see all steps are followed and if you still get error's post an Issue with all Log's from Looking Glass, journalctl, Dbus-monitor or Bustle and D-feet.
