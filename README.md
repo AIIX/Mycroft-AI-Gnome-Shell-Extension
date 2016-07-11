@@ -3,11 +3,11 @@
 
 ###### Please Note: This Extension is dependent on Mycroft Ai Core. mycroft-core is required to be present in your '/home/$user' Directory for this extension to work. 
 
-0. Changelog
-1. Installing The Extension
-2. Testing For Bugs & Reporting Format
+1. Changelog
+2. Installing The Extension
+3. Testing For Bugs & Reporting Format
 
-### [0] Changelog:
+### [1] Changelog:
   1. Release Version 0.1.2
   2. One script install for Gnome/Ubuntu based distributions
   3. Updated User Interface
@@ -17,7 +17,7 @@
   7. Text Bugs Fixed
 
 
-### [1] Installing The Extension: 
+### [2] Installing The Extension: 
 
 (Script Method):
 
@@ -65,7 +65,7 @@ $user/.virtualenvs/mycroft/lib/python2.7/site-packages'
       *Please Note: Mycroft Service takes 30 to 60 seconds to Start.
       *Please Note: If Mycroft AI Service Continues to Show Status Unknown after Clicking Start. Debug and Report error.
 
-###[2] Testing For Bugs & Reporting
+###[3] Testing For Bugs & Reporting
   1. Use Tools To Debug:
       * Looking Glass (Gnome Default)
       * journalctl /usr/bin/gnome-shell -f -o cat for Gnome Shell Debugging
