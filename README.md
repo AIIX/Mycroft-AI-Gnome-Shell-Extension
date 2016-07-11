@@ -1,7 +1,7 @@
 # Mycroft-AI-Gnome-Shell-Extension
 ###Gnome Shell Extension for Mycroft Ai 
 
-#####Please Note: This Extension is dependent on Mycroft Ai Core. mycroft-core is required to be present in your '/home/$user' Directory for this extension to work.
+###### Please Note: This Extension is dependent on Mycroft Ai Core. mycroft-core is required to be present in your '/home/$user' Directory for this extension to work. 
 
 0. Changelog
 1. Installing The Extension
