@@ -9,20 +9,20 @@
 
 ### [1] Changelog:
 
-  Release Version 0.1.3
-  1. Removed all modifications to Mycroft-Core files Extension works as a standalone with its own client to communicate with Mycroft-Core
-  2. Updated to use Websockets to communicate with Mycroft inplace of Dbus
-  3. Installation of Dependencies for Ubuntu/Debian based Gnome Systems built into the extension
-  4. Installation of Dependencies for Fedora based Gnome Systems built into the extension
-  5. Install Zip using Gnome-Tweak-Tool
+  #### Release Version 0.1.3
+  + Removed all modifications to Mycroft-Core files Extension works as a standalone with its own client to communicate with Mycroft-Core
+  + Updated to use Websockets to communicate with Mycroft inplace of Dbus
+  + Installation of Dependencies for Ubuntu/Debian based Gnome Systems built into the extension
+  + Installation of Dependencies for Fedora based Gnome Systems built into the extension
+  + Install Zip using Gnome-Tweak-Tool
 
-  # Release Version 0.1.2
-  * One script install for Gnome/Ubuntu based distributions
-  * Updated User Interface
-  * Added: (Experimental) Text reactive animation
-  * Added: (Experimental) Pin to Notifications
-  * Added: Copy to Clipboard
-  * Text Bugs Fixed
+  Release Version 0.1.2
+  + One script install for Gnome/Ubuntu based distributions
+  + Updated User Interface
+  + Added: (Experimental) Text reactive animation
+  + Added: (Experimental) Pin to Notifications
+  + Added: Copy to Clipboard
+  + Text Bugs Fixed
 
 
 ### [2] Installing The Extension: 
