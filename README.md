@@ -16,13 +16,13 @@
   4. Installation of Dependencies for Fedora based Gnome Systems built into the extension
   5. Install Zip using Gnome-Tweak-Tool
 
-  Release Version 0.1.2
-  1. One script install for Gnome/Ubuntu based distributions
-  2. Updated User Interface
-  3. Added: (Experimental) Text reactive animation
-  4. Added: (Experimental) Pin to Notifications
-  5. Added: Copy to Clipboard
-  6. Text Bugs Fixed
+  # Release Version 0.1.2
+  * One script install for Gnome/Ubuntu based distributions
+  * Updated User Interface
+  * Added: (Experimental) Text reactive animation
+  * Added: (Experimental) Pin to Notifications
+  * Added: Copy to Clipboard
+  * Text Bugs Fixed
 
 
 ### [2] Installing The Extension: 
