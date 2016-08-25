@@ -34,6 +34,7 @@ if [[ -f $f ]]; then
  	 	echo "python-gtk2 package not installed. Setting up python-gtk2."
  	 	gksudo apt-get --force-yes --yes install python-gtk2
     	   fi
+		pkexec pip install websocket-client
  		pkexec chmod -R 777 /home/$USER/.local/share/gnome-shell/extensions/mycroftaignome@aix.com/ > /dev/null
 		pkexec cp -R /usr/lib/python2.7/site-packages/dbus* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
 		pkexec cp -R /usr/lib/python2.7/site-packages/dbus/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
