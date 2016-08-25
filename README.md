@@ -42,6 +42,15 @@
   4. Restart Session
   5. Enable from Gnome Tweak Tool
   
+(Manual Installation 0.1.3):
+  1. Download Mycroft-AI Gnome Shell Extension Master Zip
+  2. Unpack Mycroft-AI Gnome Shell Extension Master Zip
+  3. Go to Gnome-Tweak-Tool -> Install mycroftaignome@aix.com.zip
+  4. Restart Session
+  5. Activate Mycroft Ai Gnome Shell Extension
+  6. Goto /home/(Your Username)/.local/share/gnome-shell/extensions/mycroftaignome@aix.com/
+  7. Run ./installrequirements.sh (Check script for dependencies) 
+
 (Manual Installation 0.1.2):
 
   1. Open Terminal and Run: 
