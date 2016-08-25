@@ -8,18 +8,33 @@
 3. Testing For Bugs & Reporting Format
 
 ### [1] Changelog:
-  1. Release Version 0.1.2
-  2. One script install for Gnome/Ubuntu based distributions
-  3. Updated User Interface
-  4. Added: (Experimental) Text reactive animation
-  5. Added: (Experimental) Pin to Notifications
-  6. Added: Copy to Clipboard
-  7. Text Bugs Fixed
+
+  Release Version 0.1.3
+  1. Removed all modifications to Mycroft-Core files Extension works as a standalone with its own client to communicate with Mycroft-Core
+  2. Updated to use Websockets to communicate with Mycroft inplace of Dbus
+  3. Installation of Dependencies for Ubuntu/Debian based Gnome Systems built into the extension
+  4. Installation of Dependencies for Fedora based Gnome Systems built into the extension
+  5. Install Zip using Gnome-Tweak-Tool
+
+  Release Version 0.1.2
+  1. One script install for Gnome/Ubuntu based distributions
+  2. Updated User Interface
+  3. Added: (Experimental) Text reactive animation
+  4. Added: (Experimental) Pin to Notifications
+  5. Added: Copy to Clipboard
+  6. Text Bugs Fixed
 
 
 ### [2] Installing The Extension: 
+(Direct Zip Install Method 0.1.3):
+  1. Download Mycroft-AI Gnome Shell Extension Master Zip
+  2. Unpack Mycroft-AI Gnome Shell Extension Master Zip
+  3. Go to Gnome-Tweak-Tool -> Install mycroftaignome@aix.com.zip
+  4. Restart Session
+  5. Activate Mycroft Ai Gnome Shell Extension
+  6. Open Extension -> Click Install Dependencies 
 
-(Script Method):
+(Script Method Version 0.1.2):
 
   1. Download Mycroft-AI Gnome Shell Extension Master Zip
   2. Unpack Mycroft-AI Gnome Shell Extension Master Zip
@@ -27,7 +42,7 @@
   4. Restart Session
   5. Enable from Gnome Tweak Tool
   
-(Manual Installation):
+(Manual Installation 0.1.2):
 
   1. Open Terminal and Run: 
   
