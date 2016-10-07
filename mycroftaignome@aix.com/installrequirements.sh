@@ -36,15 +36,6 @@ if [[ -f $f ]]; then
     	   fi
 		pkexec pip install websocket-client
  		pkexec chmod -R 777 /home/$USER/.local/share/gnome-shell/extensions/mycroftaignome@aix.com/ > /dev/null
-		pkexec cp -R /usr/lib/python2.7/site-packages/dbus* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/dbus/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/_dbus* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/gi* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/gi/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/glib* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/glib/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/gobject* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/gobject/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
 		pkexec chmod -R 777 /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/ > /dev/null
 
 	elif [[ ${osInfo[$f]} == "yum" ]]; then
@@ -52,15 +43,6 @@ if [[ -f $f ]]; then
  	 	pkexec pip install websocket-client
 		pkexec dnf install dbus-python -y
 		pkexec chmod -R 777 /home/$USER/.local/share/gnome-shell/extensions/mycroftaignome@aix.com/ > /dev/null
-		pkexec cp -R /usr/lib/python2.7/site-packages/dbus* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/dbus/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/_dbus* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/gi* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/gi/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/glib* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/glib/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/gobject* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
-		pkexec cp -R /usr/lib/python2.7/site-packages/gobject/* /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/
 		pkexec chmod -R 777 /home/$USER/.virtualenvs/mycroft/lib/python2.7/site-packages/ > /dev/null
 	fi
 fi

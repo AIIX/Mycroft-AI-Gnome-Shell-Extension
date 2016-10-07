@@ -158,13 +158,11 @@ MycroftAiGnomeBox.prototype = {
 	this.notifbox.hide();
 
 
-	this._dbusImpl = Gio.DBusExportedObject.wrapJSObject(MycroftAiGnomeResultIface, this);
 	
+	this._dbusImpl = Gio.DBusExportedObject.wrapJSObject(MycroftAiGnomeResultIface, this);	
 	const MycroftGnomeResult = new Lang.Class({
 	Name: 'MycroftGnomeResult',	
-
-	});
-	
+	});	
 	this._dbusImpl.export(Gio.DBus.session, '/com/mycroftaignome/MycroftGnomeResult');
 
 
@@ -367,7 +365,11 @@ MycroftAiGnomeBox.prototype = {
 
 	_onKeyReleaseEvent: function() {
 	this._getnotificationinput.set_text(this._textEntry.get_text())	
-   	}
+   	},
+
+	 destroy: function() {
+        this._dbusImpl.unexport();
+    }
 };
 
 
@@ -416,20 +418,20 @@ function ExtensionController(extensionMeta) {
         disable: function() {
             Main.wm.removeKeybinding("show-mycroft-dropdown");
 
-            if (this.placement == 1) {
-                Main.panel._rightBox.remove_actor(dateMenu.container);
-                Main.panel._addToPanelBox('dateMenu', dateMenu, Main.sessionMode.panel.center.indexOf('dateMenu'), Main.panel._centerBox);
+              if (this.placement == 1) {
+              Main.panel._rightBox.remove_actor(dateMenu.container);
+              Main.panel._addToPanelBox('dateMenu', dateMenu, Main.sessionMode.panel.center.indexOf('dateMenu'), Main.panel._centerBox);
 
             } else if (this.placement == 2) {
                 Main.panel._leftBox.get_children()[0].get_children()[0].get_children()[0].get_children()[0].set_text(this._activitiesText);
             }
 
             Main.panel.menuManager.removeMenu(this.extension.menu);
-
+	
             GLib.source_remove(this.extension.timeout);
             this.extension.actor.destroy();
-            this.extension.destroy();
-            this.extension = null;
+      	    this.extension.destroy();
+            this.extension = null;	
         }
     };
 }
