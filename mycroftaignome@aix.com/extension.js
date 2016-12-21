@@ -256,7 +256,6 @@ MycroftAiGnomeBox.prototype = {
     	source.notify(notification);
 }	
 
-
 	function testEmitSignalFunction(e) {
 	let symbol = e.get_key_symbol();
 	if (symbol == Clutter.Return) {	
@@ -338,12 +337,18 @@ MycroftAiGnomeBox.prototype = {
     },
 
 	setText: function(str) {
-	this._getnotificationoutput.set_text(' ' + str );	
-	this.animateimg();
+	this._getnotificationoutput.set_text(' ' + str );
+	let textnotif = this._getnotificationoutput.get_text();
+    	let source = new MessageTray.SystemNotificationSource();
+    	Main.messageTray.add(source);
+    	let notification = new MessageTray.Notification(source, textnotif, null);
+    	notification.setTransient(true);
+    	source.notify(notification);	
     	},
 
 	getvoiceQuery: function(str) {
 	this._getnotificationinput.set_text(' ' + str );
+	notificationresult()
     	},
 
 	weatherWidget: function(str) {
