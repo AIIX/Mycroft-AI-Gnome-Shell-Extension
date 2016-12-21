@@ -37,7 +37,7 @@ def on_close(ws):
 def catchInput(queryInput): #Gets User Input from the extension via dbus sends it to mycroft via websockets
             object = bus.get_object("org.gnome.Shell","/com/mycroftaignome/MycroftGnomeResult")
 	    line = object.sendQuery(guioutputstring, dbus_interface = "com.mycroftaignome.MycroftAiGnomeBox")	
-	    ws.send(json.dumps({"message_type": "recognizer_loop:utterance", "metadata": {'utterances': [line.strip()]}}))
+	    ws.send(json.dumps({"type": "recognizer_loop:utterance", "data": {'utterances': [line.strip()]}}))
 	    	
 def dbusout(): #Sends the reply received from mycroft to the extension via dbus 
 	bus = dbus.SessionBus()
@@ -49,7 +49,7 @@ if __name__ == "__main__": #DBus & WS Main Loop
     bus = dbus.SessionBus()
     try:
     	websocket.enableTrace(True)
-    	ws = websocket.WebSocketApp("ws://localhost:8000/events/ws",
+    	ws = websocket.WebSocketApp("ws://0.0.0.0:8181/core",
                               on_message = on_message,
                               on_error = on_error,
                               on_close = on_close)
