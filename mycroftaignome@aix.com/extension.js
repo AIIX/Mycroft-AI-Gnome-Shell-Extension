@@ -92,6 +92,9 @@ MycroftAiGnomeBox.prototype = {
 
 	let _stopButton = new St.Button ({ label: "Stop Mycroft Service", style_class:"button" });
 	_stopButton.connect("clicked", Lang.bind(this, _stopMycRunnerd)); 
+
+	let _connectButton = new St.Button ({ label: "Connect", style_class:"button" });
+	_connectButton.connect("clicked", Lang.bind(this, _connectMycRunnerd)); 
 	
 	this._runnerdLabel = new St.Label ({ style_class: "status" });
 	this._runnerdLabel.set_text(_("Status: Unknown")); 
@@ -102,6 +105,7 @@ MycroftAiGnomeBox.prototype = {
 	boxr.add(_installButton);
 	boxr.add(_startButton);
 	boxr.add(_stopButton);
+	boxr.add(_connectButton);
 	_stopButton.hide();
 	boxr.add_child(this._runnerdLabel);
 
@@ -172,6 +176,7 @@ MycroftAiGnomeBox.prototype = {
 	start : Me.path + "/MycroftServiceStart.sh",
 	install: "bash" + " " + Me.path + "/installrequirements.sh",
 	stop: Me.path + "/MycroftServiceStop.sh",
+	connect: Me.path + "/Connection.sh"
 	};		
 
 	var mycRunner = {
@@ -189,6 +194,10 @@ MycroftAiGnomeBox.prototype = {
 
 	install : function () {
 		this._spawn_async(mycConfig.install, null);
+	    },
+
+	connect : function () {
+		this._spawn_async(mycConfig.connect, null);
 	    },
 
    	stop : function() {
@@ -226,6 +235,10 @@ MycroftAiGnomeBox.prototype = {
     	this._runnerdLabel.set_style("background-color:#3f998a;");
 	    }
 
+	function _connectMycRunnerd() {
+	mycRunner.connect();
+	}
+
 	function animateimg() {
 	anitext.opacity = 80;
 		GLib.timeout_add(GLib.PRIORITY_DEFAULT, 100, function() {
@@ -255,6 +268,15 @@ MycroftAiGnomeBox.prototype = {
     	notification.setTransient(true);
     	source.notify(notification);
 }	
+
+	function notificationresult() {
+	let textnotif = this._getnotificationoutput.get_text();
+    	let source = new MessageTray.SystemNotificationSource();
+    	Main.messageTray.add(source);
+    	let notification = new MessageTray.Notification(source, textnotif, null);
+    	notification.setTransient(true);
+    	source.notify(notification);
+}
 
 	function testEmitSignalFunction(e) {
 	let symbol = e.get_key_symbol();
