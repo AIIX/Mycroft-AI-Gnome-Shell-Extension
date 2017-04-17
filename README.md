@@ -1,5 +1,5 @@
 # Mycroft-AI-Gnome-Shell-Extension
-###Gnome Shell Extension for Mycroft Ai 
+### Gnome Shell Extension for Mycroft Ai 
 
 ###### Please Note: This Extension is dependent on Mycroft Ai Core. mycroft-core is required to be present in your '/home/$user' Directory for this extension to work. 
 
@@ -91,7 +91,7 @@ $user/.virtualenvs/mycroft/lib/python2.7/site-packages'
         *Please Note: Mycroft Service takes 30 to 60 seconds to Start.
         *Please Note: If Mycroft AI Service Continues to Show Status Unknown after Clicking Start. Debug and Report error.
 
-###[3] Testing For Bugs & Reporting
+### [3] Testing For Bugs & Reporting
   1. Use Tools To Debug:
         * Looking Glass (Gnome Default)
         * journalctl /usr/bin/gnome-shell -f -o cat for Gnome Shell Debugging
